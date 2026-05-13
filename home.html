@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<body>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HOME</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ヘッダー読み込み -->
+  <div id="header"></div>
+
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+
+        document.getElementById("header").innerHTML = data;
+
+        // 現在ページ取得
+        const currentPage =
+          window.location.pathname.split("/").pop();
+
+        // active付与
+        if(currentPage === "home.html"){
+          document
+            .getElementById("nav-home")
+            .classList.add("active");
+        }
+
+        if(currentPage === "introduction.html"){
+          document
+            .getElementById("nav-introduction")
+            .classList.add("active");
+        }
+
+        if(currentPage === "news.html"){
+          document
+            .getElementById("nav-news")
+            .classList.add("active");
+        }
+
+        if(currentPage === "contact.html"){
+          document
+            .getElementById("nav-contact")
+            .classList.add("active");
+        }
+
+      });
+  </script>
+
+  <!-- =========================
+       Hero Section
+  ========================== -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>生体運動機能モデリング研究室</h1>
+
+      <p>
+        Human Motion Modeling Lab.
+      </p>
+
+    </div>
+
+  </section>
+  <main>
+
+    <section class="about">
+
+      <h2>研究概要</h2>
+
+      <p>
+        本研究室では、生体運動の解析・シミュレーションを通じて、
+        ヒトの歩行や運動制御メカニズムの解明を目指しています。
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
