@@ -17,7 +17,6 @@
 
 <body>
 
-  <!-- ヘッダー読み込み -->
   <div id="header"></div>
 
   <script>
@@ -27,11 +26,10 @@
 
         document.getElementById("header").innerHTML = data;
 
-        // 現在ページ取得
+
         const currentPage =
           window.location.pathname.split("/").pop();
 
-        // active付与
         if(currentPage === "home.html"){
           document
             .getElementById("nav-home")
@@ -59,9 +57,7 @@
       });
   </script>
 
-  <!-- =========================
-       Hero Section
-  ========================== -->
+
   <section class="hero">
 
     <div class="hero-content">
@@ -82,8 +78,7 @@
       <h2>研究概要</h2>
 
       <p>
-        本研究室では、生体運動の解析・シミュレーションを通じて、
-        ヒトの歩行や運動制御メカニズムの解明を目指しています。
+        作成中
       </p>
 
     </section>

@@ -1,16 +1,8 @@
-/* =========================
-   Reset
-========================= */
-
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
-
-/* =========================
-   Base
-========================= */
 
 body{
   font-family:
@@ -23,10 +15,6 @@ body{
 
   line-height:1.8;
 }
-
-/* =========================
-   Header
-========================= */
 
 header{
   width:100%;
@@ -55,9 +43,6 @@ header{
   justify-content:space-between;
 }
 
-/* =========================
-   Logo
-========================= */
 
 .logo{
   font-size:2rem;
@@ -66,9 +51,22 @@ header{
   color:#222;
 }
 
-/* =========================
-   Navigation
-========================= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 50px;  
+  width: auto;
+}
+
+.title-text {
+  font-family: "Yu Gothic", serif;
+  font-size: 32px;
+  font-weight: bold;
+}
 
 nav ul{
   display:flex;
@@ -92,19 +90,14 @@ nav a{
   transition:0.3s;
 }
 
-/* hover時 */
 
 nav a:hover{
   color:#ff9800;
 }
 
-/* activeクラス */
-
 nav a.active{
   color:#ff9800;
 }
-
-/* active下線 */
 
 nav a.active::after{
   content:"";
@@ -119,10 +112,6 @@ nav a.active::after{
 
   background:#ff9800;
 }
-
-/* =========================
-   Hero Section
-========================= */
 
 .hero{
   margin-top:75px;
@@ -162,10 +151,6 @@ nav a.active::after{
   color:#444;
 }
 
-/* =========================
-   Main Section
-========================= */
-
 main{
   width:90%;
   max-width:1200px;
@@ -195,10 +180,6 @@ main{
 .about p{
   font-size:1.1rem;
 }
-
-/* =========================
-   Responsive
-========================= */
 
 @media(max-width:1000px){
 
