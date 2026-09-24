@@ -2,45 +2,20 @@
 <html lang="ja">
 
 <head>
-
   <meta charset="UTF-8">
-
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>研究業績</title>
 
-  <link rel="stylesheet"
-        href="style.css">
-
+  <link rel="stylesheet" href="style.css">
+  <script src="header.js" defer></script>
 </head>
 
 <body>
 
   <div id="header"></div>
 
-  <div class="coming-soon"> 作成中 </div>
-
-  <script>
-
-    fetch("header.html")
-
-      .then(response => response.text())
-
-      .then(data => {
-
-        document
-          .getElementById("header")
-          .innerHTML = data;
-
-        document
-          .getElementById("nav-gyouseki")
-          .classList.add("active");
-
-      });
-
-  </script>
+  <div class="coming-soon">作成中</div>
 
 </body>
-
 </html>

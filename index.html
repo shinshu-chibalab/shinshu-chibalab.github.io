@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<body>
-
-<!DOCTYPE html>
-<html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,50 +8,12 @@
   <title>HOME</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="header.js" defer></script>
 </head>
 
 <body>
 
   <div id="header"></div>
-
-  <script>
-    fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-
-        document.getElementById("header").innerHTML = data;
-
-
-        const currentPage =
-          window.location.pathname.split("/").pop();
-
-        if(currentPage === "home.html"){
-          document
-            .getElementById("nav-home")
-            .classList.add("active");
-        }
-
-        if(currentPage === "introduction.html"){
-          document
-            .getElementById("nav-introduction")
-            .classList.add("active");
-        }
-
-        if(currentPage === "news.html"){
-          document
-            .getElementById("nav-news")
-            .classList.add("active");
-        }
-
-        if(currentPage === "contact.html"){
-          document
-            .getElementById("nav-contact")
-            .classList.add("active");
-        }
-
-      });
-  </script>
-
 
   <section class="hero">
 
@@ -71,6 +28,7 @@
     </div>
 
   </section>
+
   <main>
 
     <section class="about">
