@@ -198,6 +198,17 @@ main{
   font-size:1.1rem;
 }
 
+.card p + p{
+  margin-top:1.2em;
+}
+
+/* 本文中で特に強調したい語句（オレンジの蛍光ペン風） */
+.highlight{
+  color:#e65100;
+
+  background:linear-gradient(transparent 60%, #ffe0b2 60%);
+}
+
 .news-list{
   list-style:none;
 }
