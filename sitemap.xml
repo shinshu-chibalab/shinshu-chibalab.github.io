@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 検索エンジンに知らせるページ一覧。「作成中」のページは完成したら追加する -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://shinshu-chibalab.github.io/</loc>
+    <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://shinshu-chibalab.github.io/news.html</loc>
+    <lastmod>2026-09-25</lastmod>
+  </url>
+</urlset>
