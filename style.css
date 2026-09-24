@@ -16,18 +16,20 @@ body{
   line-height:1.8;
 }
 
+/* ヘッダーはスクロールしても上部に残す */
+#header{
+  position:sticky;
+  top:0;
+
+  z-index:1000;
+}
+
 header{
   width:100%;
 
   background:white;
 
   border-bottom:1px solid #ddd;
-
-  position:fixed;
-  top:0;
-  left:0;
-
-  z-index:1000;
 }
 
 .header-inner{
@@ -112,8 +114,6 @@ nav a.active::after{
 }
 
 .hero{
-  margin-top:75px;
-
   width:100%;
   min-height:650px;
 
@@ -156,7 +156,7 @@ main{
   margin:80px auto;
 }
 
-.about{
+.card{
   background:white;
 
   padding:60px;
@@ -167,7 +167,11 @@ main{
     0 4px 20px rgba(0,0,0,0.08);
 }
 
-.about h2{
+.card + .card{
+  margin-top:40px;
+}
+
+.card h2{
   font-size:2rem;
 
   margin-bottom:25px;
@@ -175,18 +179,80 @@ main{
   color:#ff9800;
 }
 
-.about p{
+.card p{
   font-size:1.1rem;
 }
 
+.news-list{
+  list-style:none;
+}
+
+.news-list li{
+  display:flex;
+  gap:30px;
+
+  padding:15px 0;
+
+  border-bottom:1px solid #eee;
+
+  font-size:1.1rem;
+}
+
+.news-list time{
+  flex-shrink:0;
+
+  color:#888;
+}
+
+.news-list a{
+  color:#222;
+}
+
+.news-list a:hover{
+  color:#ff9800;
+}
+
+.more-link{
+  display:inline-block;
+
+  margin-top:20px;
+
+  color:#ff9800;
+  font-weight:500;
+
+  text-decoration:none;
+}
+
+.more-link::after{
+  content:" →";
+}
+
+.more-link:hover{
+  text-decoration:underline;
+}
+
 @media(max-width:1000px){
+
+  /* 狭い画面ではヘッダーが高くなるので固定しない */
+  #header{
+    position:static;
+  }
 
   .header-inner{
     flex-direction:column;
 
     height:auto;
 
-    padding:20px 0;
+    padding:20px 16px;
+  }
+
+  .logo-img{
+    height:36px;
+  }
+
+  .title-text{
+    font-size:22px;
+    white-space:nowrap;
   }
 
   nav ul{
@@ -199,10 +265,6 @@ main{
     justify-content:center;
   }
 
-  .hero{
-    padding-top:120px;
-  }
-
   .hero-content h1{
     font-size:2.3rem;
   }
@@ -211,13 +273,18 @@ main{
     font-size:1.2rem;
   }
 
-  .about{
+  .card{
     padding:35px;
+  }
+
+  .news-list li{
+    flex-direction:column;
+    gap:0;
   }
 }
 
 .coming-soon{ 
-    margin-top:200px; 
+    margin-top:125px; 
     text-align:center; 
     font-size:5rem; 
     font-weight:700; 
