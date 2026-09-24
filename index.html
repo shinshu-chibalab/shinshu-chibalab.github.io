@@ -26,6 +26,21 @@
         Human Motion Modeling Lab.
       </p>
 
+      <video
+        class="hero-video"
+        src="videos/top-simulation.mp4"
+        poster="videos/top-simulation.jpg"
+        autoplay muted loop playsinline
+        aria-label="筋骨格モデルによる前かがみ動作のシミュレーション">
+      </video>
+
+      <script>
+        // OS で「動きを減らす」設定にしている閲覧者には自動再生しない
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.querySelector(".hero-video").pause();
+        }
+      </script>
+
     </div>
 
   </section>

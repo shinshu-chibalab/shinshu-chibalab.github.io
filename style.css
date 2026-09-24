@@ -149,6 +149,21 @@ nav a.active::after{
   color:#444;
 }
 
+.hero-video{
+  display:block;
+
+  width:100%;
+  max-width:1200px;
+  aspect-ratio:1500 / 400;
+
+  margin:40px auto 0;
+
+  border-radius:12px;
+
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.08);
+}
+
 main{
   width:90%;
   max-width:1200px;
@@ -263,6 +278,10 @@ main{
     flex-wrap:wrap;
 
     justify-content:center;
+  }
+
+  .hero{
+    padding:40px 16px;
   }
 
   .hero-content h1{
