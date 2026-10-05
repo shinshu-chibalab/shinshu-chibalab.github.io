@@ -40,6 +40,62 @@ const FACULTY = [
 //  },
 // ---------------------------------------------------------------------------
 const STUDENTS = [
+  {
+  grade: "M1",
+  name: "越智 雅宏",
+  kana: "おち まさひろ",
+  message: "趣味：深夜徘徊 ／ 好物：美味しいモノ ／ 特技：ゲーム全般",
+  theme: "高齢者における姿勢保持戦略の機序解明",
+  photo: "images/photos/masahiroochi_int.jpg",
+ },
+ {
+  grade: "M1",
+  name: "加藤 芙麻",
+  kana: "かとう ふうま",
+  message: "趣味：アーケードゲーム ／ 好物：スイカ ／ 特技：誰とでも話せる",
+  theme: "視覚と体性感覚の変容に伴う筋緊張の変容が立位姿勢へ及ぼす影響についてのモデル化",
+  photo: "images/photos/fumakato_int.jpg",
+ },
+  {
+  grade: "M1",
+  name: "川崎 敦史",
+  kana: "かわさき あつし",
+  message: "趣味：サッカー、スノーボード ／ 好物：パイナップル ／ 特技：全踏破迷路",
+  theme: "3次元筋骨格モデルを用いた歩行開始動作の構築手法の提案",
+  photo: "images/photos/atsushikawasaki_int.jpg",
+ },
+  {
+  grade: "M1",
+  name: "有賀 巧",
+  kana: "あるが たくみ",
+  message: "趣味：温泉、散歩 ／ 好物：チーズバーガー ／ 特技:大食い",
+  theme: "筋骨格モデルを用いた歩行停止動作の構築手法の提案",
+  photo: "images/photos/takumiaruga_int.jpg",
+ },
+  {
+  grade: "B4",
+  name: "尾澤 彪吾",
+  kana: "おざわ ひょうご",
+  message: "趣味：YouTube ／ 好物：さけるチーズ ／ 特技：カラオケ",
+  theme: "視覚的補助キューが立位姿勢制御に与える影響の解明",
+  photo: "images/photos/icon.jpeg",
+ },
+  {
+  grade: "B4",
+  name: "小林 駿太",
+  kana: "こばやし しゅんた",
+  message: "趣味：サッカー観戦、読書 ／ 好物：肉 ／ 特技：顔と名前を覚える",
+  theme: "筋骨格モデルを用いた異常姿勢要因評価手法の提案",
+  photo: "images/photos/icon.jpeg",
+ },
+  {
+  grade: "B4",
+  name: "阪田 優之介",
+  kana: "さかた ゆうのすけ",
+  message: "趣味：ボードゲーム、テレビゲーム ／ 好物：チーズインハンバーグ ／ 特技：楽器演奏(打楽器、マンドロンチェロ)",
+  theme: "計算機モデルを用いた転倒恐怖を考慮した立位姿勢の検討",
+  photo: "images/photos/icon.jpeg",
+ }
 ];
 
 // 表示する学年の順番と見出し
