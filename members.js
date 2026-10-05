@@ -78,7 +78,7 @@ const STUDENTS = [
   kana: "おざわ ひょうご",
   message: "趣味：YouTube ／ 好物：さけるチーズ ／ 特技：カラオケ",
   theme: "視覚的補助キューが立位姿勢制御に与える影響の解明",
-  photo: "images/photos/icon.jpg",
+  photo: "images/photos/icon.jpeg",
  },
   {
   grade: "B4",
@@ -86,7 +86,7 @@ const STUDENTS = [
   kana: "こばやし しゅんた",
   message: "趣味：サッカー観戦、読書 ／ 好物：肉 ／ 特技：顔と名前を覚える",
   theme: "筋骨格モデルを用いた異常姿勢要因評価手法の提案",
-  photo: "images/photos/icon.jpg",
+  photo: "images/photos/icon.jpeg",
  },
   {
   grade: "B4",
@@ -94,7 +94,7 @@ const STUDENTS = [
   kana: "さかた ゆうのすけ",
   message: "趣味：ボードゲーム、テレビゲーム ／ 好物：チーズインハンバーグ ／ 特技：楽器演奏(打楽器、マンドロンチェロ)",
   theme: "計算機モデルを用いた転倒恐怖を考慮した立位姿勢の検討",
-  photo: "images/photos/icon.jpg",
+  photo: "images/photos/icon.jpeg",
  }
 ];
 
