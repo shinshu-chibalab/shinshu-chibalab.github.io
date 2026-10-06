@@ -48,6 +48,7 @@ const STUDENTS = [
   kana: "おち まさひろ",
   message: "趣味：深夜散歩 ／ 好物：美味しいモノ ／ 特技：ゲーム全般",
   theme: "高齢者における姿勢保持戦略の機序解明",
+  hometown: "栃木県小山市",
   photo: "images/photos/thumbs/masahiroochi_int.jpg",
  },
  {
@@ -56,6 +57,7 @@ const STUDENTS = [
   kana: "かとう ふうま",
   message: "趣味：アーケードゲーム ／ 好物：スイカ ／ 特技：誰とでも話せる",
   theme: "視覚と体性感覚の変容に伴う筋緊張の変容が立位姿勢へ及ぼす影響についてのモデル化",
+  hometown: "愛知県春日井市",
   photo: "images/photos/thumbs/fumakato_int.jpg",
  },
   {
@@ -64,6 +66,7 @@ const STUDENTS = [
   kana: "かわさき あつし",
   message: "趣味：サッカー、スノーボード ／ 好物：パイナップル ／ 特技：全踏破迷路",
   theme: "3次元筋骨格モデルを用いた歩行開始動作の構築手法の提案",
+  hometown: "千葉県木更津市",
   photo: "images/photos/thumbs/atsushikawasaki_int.jpg",
  },
   {
@@ -72,6 +75,7 @@ const STUDENTS = [
   kana: "あるが たくみ",
   message: "趣味：温泉、散歩 ／ 好物：チーズバーガー ／ 特技：大食い",
   theme: "筋骨格モデルを用いた歩行停止動作の構築手法の提案",
+  hometown: "長野県東御市",
   photo: "images/photos/thumbs/takumiaruga_int.jpg",
  },
   {
@@ -80,6 +84,7 @@ const STUDENTS = [
   kana: "おざわ ひょうご",
   message: "趣味：YouTube ／ 好物：さけるチーズ ／ 特技：カラオケ",
   theme: "視覚的補助キューが立位姿勢制御に与える影響の解明",
+  hometown: "長野県下伊那郡高森町",
   photo: "images/photos/icon.jpeg",
  },
   {
@@ -88,6 +93,7 @@ const STUDENTS = [
   kana: "こばやし しゅんた",
   message: "趣味：サッカー観戦、読書 ／ 好物：肉 ／ 特技：顔と名前を覚える",
   theme: "筋骨格モデルを用いた異常姿勢要因評価手法の提案",
+  hometown: "長野県長野市",
   photo: "images/photos/icon.jpeg",
  },
   {
@@ -198,9 +204,13 @@ GRADES.forEach(grade => {
     if (person.message) {
       info.appendChild(message(person.message));
     }
-    if (person.theme) {
-      const dl = el("dl", "member-details");
-      dl.append(el("dt", "", "研究テーマ"), el("dd", "", person.theme));
+    const dl = el("dl", "member-details");
+    [["研究テーマ", person.theme],["出身地", person.hometown]]
+      .filter(([, value]) => value)
+      .forEach(([label, value]) => {
+        dl.append(el("dt", "", label), el("dd", "", value));
+      });
+    if (dl.children.length) {
       info.appendChild(dl);
     }
 
