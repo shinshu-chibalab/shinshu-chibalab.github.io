@@ -26,6 +26,8 @@ const FACULTY = [
 //   message: ひとこと。「 ／ 」（前後に半角スペース）で区切ると、項目の途中で改行されない
 //   theme:   研究テーマ
 //   photo:   写真。images/photos/ に置いたファイル名を書く。載せない場合は "" のまま
+//            表示は直径120pxの丸なので、顔を中心に240px四方程度へ縮小したものを
+//            images/photos/thumbs/ に置いてそちらを指定する（元の写真は images/photos/ に残す）
 // 並び順は学年ごとに自動で整理されるので、どこに書き足してもよい
 // 学生が1人もいない間は「学生」欄ごと表示されない
 //
@@ -46,7 +48,7 @@ const STUDENTS = [
   kana: "おち まさひろ",
   message: "趣味：深夜徘徊 ／ 好物：美味しいモノ ／ 特技：ゲーム全般",
   theme: "高齢者における姿勢保持戦略の機序解明",
-  photo: "images/photos/masahiroochi_int.jpg",
+  photo: "images/photos/thumbs/masahiroochi_int.jpg",
  },
  {
   grade: "M1",
@@ -54,7 +56,7 @@ const STUDENTS = [
   kana: "かとう ふうま",
   message: "趣味：アーケードゲーム ／ 好物：スイカ ／ 特技：誰とでも話せる",
   theme: "視覚と体性感覚の変容に伴う筋緊張の変容が立位姿勢へ及ぼす影響についてのモデル化",
-  photo: "images/photos/fumakato_int.jpg",
+  photo: "images/photos/thumbs/fumakato_int.jpg",
  },
   {
   grade: "M1",
@@ -62,15 +64,15 @@ const STUDENTS = [
   kana: "かわさき あつし",
   message: "趣味：サッカー、スノーボード ／ 好物：パイナップル ／ 特技：全踏破迷路",
   theme: "3次元筋骨格モデルを用いた歩行開始動作の構築手法の提案",
-  photo: "images/photos/atsushikawasaki_int.jpg",
+  photo: "images/photos/thumbs/atsushikawasaki_int.jpg",
  },
   {
   grade: "M1",
   name: "有賀 巧",
   kana: "あるが たくみ",
-  message: "趣味：温泉、散歩 ／ 好物：チーズバーガー ／ 特技:大食い",
+  message: "趣味：温泉、散歩 ／ 好物：チーズバーガー ／ 特技：大食い",
   theme: "筋骨格モデルを用いた歩行停止動作の構築手法の提案",
-  photo: "images/photos/takumiaruga_int.jpg",
+  photo: "images/photos/thumbs/takumiaruga_int.jpg",
  },
   {
   grade: "B4",
