@@ -102,6 +102,7 @@ const STUDENTS = [
   kana: "さかた ゆうのすけ",
   message: "趣味：ボードゲーム、テレビゲーム ／ 好物：チーズインハンバーグ ／ 特技：楽器演奏(打楽器、マンドロンチェロ)",
   theme: "計算機モデルを用いた転倒恐怖を考慮した立位姿勢の検討",
+  hometown: "奈良県生駒市",
   photo: "images/photos/icon.jpeg",
  }
 ];
