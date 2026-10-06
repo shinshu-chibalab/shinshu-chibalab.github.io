@@ -1,6 +1,7 @@
 // ニュース一覧（ここに追記すると HOME と News & Topics の両方に反映される）
 // date: "YYYY-MM-DD"、text: 本文、url: リンク先（任意）
 const NEWS = [
+  { date: "2026-10-06", text: "アクセス・連絡先ページを更新しました。", url: "contact.html" },
   { date: "2026-10-05", text: "メンバーページを更新しました。", url: "members.html" },
   { date: "2026-09-25", text: "HPを開設しました。" },
 ];
