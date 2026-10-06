@@ -46,7 +46,7 @@ const STUDENTS = [
   grade: "M1",
   name: "越智 雅宏",
   kana: "おち まさひろ",
-  message: "趣味：深夜徘徊 ／ 好物：美味しいモノ ／ 特技：ゲーム全般",
+  message: "趣味：深夜散歩 ／ 好物：美味しいモノ ／ 特技：ゲーム全般",
   theme: "高齢者における姿勢保持戦略の機序解明",
   photo: "images/photos/thumbs/masahiroochi_int.jpg",
  },
