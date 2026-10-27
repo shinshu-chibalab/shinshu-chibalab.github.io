@@ -7,16 +7,71 @@
 
   <title>研究業績 | 千葉研究室（信州大学）</title>
   <link rel="canonical" href="https://shinshu-chibalab.github.io/gyouseki.html">
+  <meta name="description" content="信州大学 千葉研究室（生体運動機能モデリング研究室）の研究業績。雑誌論文、解説・総説、国際会議・シンポジウム、国内講演会・シンポジウムでの発表、科研費などの研究課題の一覧です。">
 
   <link rel="stylesheet" href="style.css">
   <script src="header.js" defer></script>
+  <script src="gyouseki-overrides.js" defer></script>
+  <script src="gyouseki.js" defer></script>
 </head>
 
 <body>
 
   <div id="header"></div>
 
-  <div class="coming-soon">作成中</div>
+  <main>
+
+    <section class="card">
+
+      <h2>研究業績</h2>
+
+      <p>
+        千葉の研究業績を、<a href="https://researchmap.jp/ryosuke_chiba" target="_blank" rel="noopener">researchmap</a>
+        の登録内容から自動で読み込んで表示しています。
+      </p>
+
+      <nav class="pub-toc" aria-label="業績の種類">
+        <a href="#journal">雑誌論文</a>
+        <a href="#review">解説・総説</a>
+        <a href="#intl">国際会議・シンポジウム</a>
+        <a href="#domestic">国内講演会・シンポジウム</a>
+        <a href="#projects">研究課題</a>
+      </nav>
+
+      <p id="pub-status" class="pub-status">読み込み中…</p>
+
+      <noscript>
+        <p>業績一覧の表示には JavaScript が必要です。<a href="https://researchmap.jp/ryosuke_chiba">researchmap</a> をご覧ください。</p>
+      </noscript>
+
+    </section>
+
+    <section class="card pub-section" id="journal" hidden>
+      <h2>雑誌論文 <span class="pub-count"></span></h2>
+      <ol class="pub-list"></ol>
+    </section>
+
+    <section class="card pub-section" id="review" hidden>
+      <h2>解説・総説 <span class="pub-count"></span></h2>
+      <ol class="pub-list"></ol>
+    </section>
+
+    <section class="card pub-section" id="intl" hidden>
+      <h2>国際会議・シンポジウム <span class="pub-count"></span></h2>
+      <ol class="pub-list"></ol>
+    </section>
+
+    <section class="card pub-section" id="domestic" hidden>
+      <h2>国内講演会・シンポジウム <span class="pub-count"></span></h2>
+      <div class="pub-years"></div>
+    </section>
+
+    <section class="card pub-section" id="projects" hidden>
+      <h2>研究課題 <span class="pub-count"></span></h2>
+      <ol class="pub-list"></ol>
+    </section>
+
+  </main>
 
 </body>
 </html>

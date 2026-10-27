@@ -741,3 +741,127 @@ main{
     padding:14px;
   }
 }
+
+
+/* ---------- 研究業績ページ ---------- */
+
+.pub-toc{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+
+  margin-top:20px;
+}
+
+.pub-toc a{
+  padding:6px 16px;
+
+  background:#fff3e0;
+  border-radius:999px;
+
+  color:#e65100;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.pub-toc a:hover{
+  background:#ffe0b2;
+}
+
+.card .pub-status{
+  margin-top:20px;
+
+  color:#888;
+}
+
+/* 固定ヘッダーの下に見出しが隠れないようにする */
+.pub-section{
+  scroll-margin-top:100px;
+}
+
+.pub-count{
+  color:#888;
+  font-size:1rem;
+  font-weight:400;
+}
+
+.pub-list{
+  list-style:none;
+}
+
+.pub-item{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+
+  padding:14px 0;
+
+  border-bottom:1px solid #eee;
+
+  line-height:1.6;
+}
+
+.pub-item:last-child{
+  border-bottom:0;
+}
+
+.pub-authors{
+  color:#555;
+  font-size:0.95rem;
+}
+
+.pub-title{
+  font-weight:700;
+}
+
+.pub-venue{
+  color:#555;
+  font-size:0.95rem;
+}
+
+.pub-meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+
+  margin-top:4px;
+}
+
+.pub-tag{
+  display:inline-block;
+
+  padding:0 8px;
+
+  background:#fff3e0;
+  border-radius:4px;
+
+  color:#e65100;
+  font-size:0.8rem;
+  font-weight:700;
+}
+
+.pub-doi{
+  color:#1565c0;
+  font-size:0.9rem;
+  word-break:break-all;
+}
+
+.pub-year + .pub-year{
+  margin-top:10px;
+}
+
+.pub-year summary{
+  padding:8px 0;
+
+  cursor:pointer;
+
+  color:#e65100;
+  font-weight:700;
+}
+
+@media(max-width:1000px){
+  .pub-section{
+    scroll-margin-top:20px;
+  }
+}
