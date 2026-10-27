@@ -7,16 +7,176 @@
 
   <title>研究室紹介 | 千葉研究室（信州大学）</title>
   <link rel="canonical" href="https://shinshu-chibalab.github.io/introduction.html">
+  <meta name="description" content="信州大学 千葉研究室（生体運動機能モデリング研究室）の研究紹介。筋骨格モデルによるシミュレーションとVRを用いた実験で、高齢者の姿勢や歩行の開始・停止、転倒への恐怖が姿勢に与える影響などを調べています。">
 
   <link rel="stylesheet" href="style.css">
   <script src="header.js" defer></script>
+  <script src="introduction.js" defer></script>
 </head>
 
 <body>
 
   <div id="header"></div>
 
-  <div class="coming-soon">作成中</div>
+  <main>
+
+    <section class="card">
+
+      <h2>ヒトの運動を<strong class="highlight">作って調べる</strong></h2>
+
+      <p>
+        私たちは、ヒトの運動を計算機（コンピュータ）の中で「作って」、その仕組みを「調べて」います。
+        ヒトは感覚を得て、脳神経系で運動を計画し、筋肉を動かして骨格を動かし、環境に働きかけることで運動を生み出しています。
+        この流れが弱まったり壊れたりすると、フレイルティや障がいにつながります。
+      </p>
+
+      <p>
+        けれども、そもそもヒトの脳神経系がどのように運動を生み出しているのかは、まだ十分に分かっていません。
+        リハビリテーションやスポーツ科学への応用を見据えて、その仕組みの解明に取り組んでいます。
+      </p>
+
+    </section>
+
+    <section class="card">
+
+      <h2>運動を作るために必要なもの</h2>
+
+      <!-- 感覚から環境までの流れ -->
+      <ol class="flow" aria-label="ヒトが運動を生み出す流れ">
+        <li>感覚</li>
+        <li>脳神経系</li>
+        <li>筋肉</li>
+        <li>骨格</li>
+        <li>環境</li>
+      </ol>
+
+      <p>
+        この流れを計算機の中で再現するために、次の4つを組み合わせてヒトの運動をシミュレーションしています。
+      </p>
+
+      <ul class="model-list">
+        <li><span class="model-name">物理シミュレータ</span>重力や床との接触など、身体がおかれた環境を計算する</li>
+        <li><span class="model-name">骨格のモデル</span>骨や関節の形と動き方を表す</li>
+        <li><span class="model-name">筋肉のモデル</span>筋肉が力を生み出す仕組みを表す</li>
+        <li><span class="model-name">コントローラ（制御器）のモデル</span>脳神経系が筋肉をどう動かすかを表す</li>
+      </ul>
+
+    </section>
+
+    <section class="card">
+
+      <h2>研究テーマ</h2>
+
+      <h3 class="theme-group-heading">計算機モデルで作って確かめる</h3>
+
+      <div class="theme-grid">
+
+        <article class="theme-card">
+          <video class="theme-media" src="videos/intro/posture.mp4" poster="videos/intro/posture.jpg"
+                 muted loop playsinline preload="none"
+                 aria-label="胸椎に自由度を加えた筋骨格モデルで構築した前かがみの立位姿勢"></video>
+          <h4>異常姿勢となる要因の解明</h4>
+          <p class="theme-question">高齢者の背中が曲がるのはなぜ？</p>
+          <p>
+            背中は筋力の低下などで曲がってしまったのか、それとも自ら曲げているのか。
+            筋骨格モデルの胸椎に自由度を加えて立位姿勢を構築し、姿勢が崩れる要因を調べています。
+          </p>
+          <p class="theme-members">担当：<a href="members.html">小林 駿太</a></p>
+        </article>
+
+        <article class="theme-card">
+          <video class="theme-media" src="videos/intro/fear.mp4" poster="videos/intro/fear.jpg"
+                 muted loop playsinline preload="none"
+                 aria-label="転倒ダメージを評価しない場合と評価する場合の立位姿勢の比較"></video>
+          <h4>転倒への恐怖が立位姿勢へ与える影響の解明</h4>
+          <p class="theme-question">高齢者と若年者で姿勢が異なるのはなぜか？</p>
+          <p>
+            「高齢者は転倒への恐怖によって円背になる」という仮説を立て、検証しています。
+            転倒時に受けるダメージを転倒への恐怖とみなし、それを小さくするように評価すると、
+            モデルは少し前傾した姿勢で立つようになりました。
+          </p>
+          <p class="theme-members">担当：<a href="members.html">阪田 優之介</a></p>
+        </article>
+
+        <article class="theme-card">
+          <figure class="theme-media theme-figure">
+            <img src="images/intro/disturbance-before.jpg" alt="外乱を受ける前の立位姿勢" loading="lazy">
+            <span class="theme-figure-arrow">外乱</span>
+            <img src="images/intro/disturbance-after.jpg" alt="外乱を受けた後の立位姿勢" loading="lazy">
+          </figure>
+          <h4>立位時の外乱に対する制御戦略の機序解明</h4>
+          <p class="theme-question">高齢者が外乱から立ち直りにくいのはなぜか？</p>
+          <p>
+            立っているときに外から力（外乱）が加わると、高齢者は姿勢を立て直しにくくなります。
+            その原因は筋力の低下なのか、神経の伝達の遅れなのか。外乱に対する立位の制御戦略を計算機モデルで調べています。
+          </p>
+          <p class="theme-members">担当：<a href="members.html">越智 雅宏</a></p>
+        </article>
+
+        <article class="theme-card">
+          <video class="theme-media" src="videos/intro/gait.mp4" poster="videos/intro/gait.jpg"
+                 muted loop playsinline preload="none"
+                 aria-label="筋骨格モデルで構築した歩行開始動作と歩行停止動作"></video>
+          <h4>歩行の開始・停止動作の機序解明</h4>
+          <p class="theme-question">歩き始めと立ち止まりの仕組みはどうなっているのか？</p>
+          <p>
+            転倒は、歩き始めや立ち止まるときに多く起こります。
+            歩行開始動作と歩行停止動作の計算機モデルを構築し、それらを生み出す制御メカニズムの解明を目指しています。
+          </p>
+          <p class="theme-members">担当：<a href="members.html">川崎 敦史</a>（歩行開始）、<a href="members.html">有賀 巧</a>（歩行停止）</p>
+        </article>
+
+      </div>
+
+      <h3 class="theme-group-heading">VRを用いて実験</h3>
+
+      <div class="theme-grid">
+
+        <article class="theme-card">
+          <video class="theme-media" src="videos/intro/visual-cue.mp4" poster="videos/intro/visual-cue.jpg"
+                 muted loop playsinline preload="none"
+                 aria-label="VRの高所環境に壁や三次元グリッドを加えた様子"></video>
+          <h4>筋活動や姿勢に影響を与える視覚的要素の解明</h4>
+          <p class="theme-question">視覚の手がかりが姿勢に効くのは、どういう原理？</p>
+          <p>
+            視覚的な手がかり（視覚キュー）が筋活動や姿勢に影響を与えることが示唆されています。
+            VRの高所環境の周囲に壁を置いて安心感を与えたり、三次元グリッドを加えて空間上の自己位置の推定を補助したりして、
+            姿勢や筋活動がどう変わるかを調べています。
+          </p>
+          <p class="theme-members">担当：<a href="members.html">尾澤 彪吾</a></p>
+        </article>
+
+        <article class="theme-card">
+          <video class="theme-media" src="videos/intro/height.mp4" poster="videos/intro/height.jpg"
+                 muted loop playsinline preload="none"
+                 aria-label="VRゴーグルを着けた実験の様子と、VRで構築した高所環境"></video>
+          <h4>姿勢脅威と感覚不一致による筋緊張亢進の機序解明</h4>
+          <p class="theme-question">転びそうなとき、姿勢が硬直してしまうのはなぜか？</p>
+          <p>
+            VRで高所環境をつくり出して恐怖感を感じてもらい、筋電図などを計測しています。
+            「落ちるかもしれない」という姿勢への脅威と、視覚と体性感覚の食い違いという二つの要因に着目し、
+            筋の緊張が高まる仕組みを調べています。
+          </p>
+          <p class="theme-members">担当：<a href="members.html">加藤 芙麻</a></p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="card">
+
+      <h2>研究室見学</h2>
+
+      <p>
+        研究室見学のご希望やご質問は、お気軽にご連絡ください。
+      </p>
+
+      <a href="contact.html" class="more-link">アクセス・連絡先</a>
+
+    </section>
+
+  </main>
 
 </body>
 </html>

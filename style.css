@@ -557,3 +557,187 @@ main{
     padding:30px;
   }
 }
+
+/* ---------- 研究室紹介ページ ---------- */
+
+/* 感覚 → 脳神経系 → 筋肉 → 骨格 → 環境 の流れ */
+.flow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px 40px;
+
+  margin-bottom:25px;
+
+  list-style:none;
+}
+
+.flow li{
+  position:relative;
+
+  padding:8px 18px;
+
+  background:#fff3e0;
+  border-radius:999px;
+
+  color:#e65100;
+  font-weight:700;
+}
+
+.flow li + li::before{
+  content:"→";
+
+  position:absolute;
+  left:-30px;
+
+  color:#ff9800;
+}
+
+.model-list{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:16px;
+
+  margin-top:20px;
+
+  list-style:none;
+}
+
+.model-list li{
+  padding:16px 20px;
+
+  background:#fafafa;
+  border-radius:10px;
+
+  color:#444;
+  line-height:1.6;
+}
+
+.model-name{
+  display:block;
+
+  margin-bottom:4px;
+
+  color:#222;
+  font-weight:700;
+}
+
+.theme-group-heading{
+  margin:10px 0 20px;
+  padding-left:12px;
+
+  border-left:4px solid #ff9800;
+
+  font-size:1.3rem;
+}
+
+.theme-grid + .theme-group-heading{
+  margin-top:50px;
+}
+
+.theme-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:30px;
+}
+
+.theme-card{
+  padding:20px;
+
+  background:#fafafa;
+  border-radius:12px;
+}
+
+.theme-card h4{
+  margin-top:16px;
+
+  font-size:1.2rem;
+  line-height:1.5;
+}
+
+.theme-media{
+  display:block;
+
+  width:100%;
+  aspect-ratio:16 / 9;
+
+  object-fit:cover;
+
+  background:#e0e0e0;
+  border-radius:8px;
+}
+
+/* 動画のないテーマ用：外乱前後の2枚を矢印でつなぐ */
+.theme-figure{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+
+  margin:0;
+  padding:12px;
+
+  background:#e3eefb;
+}
+
+.theme-figure img{
+  height:100%;
+  max-width:40%;
+
+  object-fit:contain;
+}
+
+.theme-figure-arrow{
+  color:#1565c0;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.theme-figure-arrow::after{
+  content:" ➡";
+}
+
+.card .theme-question{
+  margin-top:6px;
+
+  color:#e65100;
+  font-weight:700;
+}
+
+.card .theme-card p + p{
+  margin-top:10px;
+}
+
+.card .theme-members{
+  color:#666;
+  font-size:0.95rem;
+}
+
+.theme-members a{
+  color:#e65100;
+}
+
+@media(max-width:1000px){
+  .model-list,
+  .theme-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* 狭い画面では流れを縦に並べる */
+  .flow{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:30px;
+  }
+
+  .flow li + li::before{
+    content:"↓";
+
+    left:22px;
+    top:-28px;
+  }
+
+  .theme-card{
+    padding:14px;
+  }
+}

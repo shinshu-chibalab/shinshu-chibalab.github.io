@@ -3,11 +3,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://shinshu-chibalab.github.io/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://shinshu-chibalab.github.io/news.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://shinshu-chibalab.github.io/members.html</loc>
@@ -16,5 +16,9 @@
   <url>
     <loc>https://shinshu-chibalab.github.io/contact.html</loc>
     <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://shinshu-chibalab.github.io/introduction.html</loc>
+    <lastmod>2026-10-27</lastmod>
   </url>
 </urlset>
