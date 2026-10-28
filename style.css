@@ -863,3 +863,28 @@ main{
     scroll-margin-top:20px;
   }
 }
+
+/* 集合写真用　*/
+.group-photo-section {
+  text-align: center;
+}
+
+.group-photo {
+  margin: 20px 0 8px;
+}
+
+.group-photo img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.group-photo figcaption {
+  margin-top: 10px;
+  color: #666;
+  font-size: 1.5rem;
+}
